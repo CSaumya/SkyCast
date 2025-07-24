@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+    color: white;
+    font-weight: 600;
+}
+body{
+    background-image: url("./assets/bg.jpeg");
+    width: 100%;
+    height: 100dvh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+}
+body::before{
+     content: "";
+     position: absolute;
+     width: 100%;
+     height: 100dvh;
+     background: rgb(0, 0, 0, 0.15);
+     backdrop-filter: blur(14px);
+}
+.regular-txt{
+    font-size: 400;
+}
+.main-container{
+    width: 600px;
+    max-width: 95%;
+    height: 550px;
+    z-index: 1;
+    background: linear-gradient(
+        to top, rgb(0, 0, 0 , 0.15),
+        rgb(255, 255, 255,0.15)
+    );
+    border-radius: 12px;
+    backdrop-filter: blur(100px);
+    padding: 20px;
+}
+
+/*Input container*/
+.input-container{
+  position: relative;
+  margin-bottom: 25px;
+}
+.input-city{
+    width: 100%;
+    padding: 10px 16px;
+    border-radius: 99px;
+    border: 3px solid transparent;
+    background: rgb(0, 0, 0 , 0.15);
+    outline: none;
+    font-weight: 200;
+    transition: 0.25s border;
+    padding-right: 45px;
+}
+.input-city:focus{
+    border: 3px solid rgb(0, 0, 0, 0.15);
+}
+.input-city::placeholder{
+    color: white;
+}
+.input-btn{
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: large;
+}
+
+/*Section - weather info*/
+.weather-info{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.locaion-date-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.location{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.weather-summary-container{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url('./assets/weather/cloudy.jpg');
+    background-size: cover;
+    border-radius: 25px;
+}
+.weather-conditions-container{
+    display: flex;
+    justify-content: space-evenly;
+}
+.condition-item{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.condition-item i{
+    font-size: 25px;
+}
+.forecast-items-container{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 15px;
+    padding-bottom: 12px;
+    overflow-y: hidden; 
+}
+.forecast-item{
+    min-width: 100px;
+    background: rgb(255, 255, 255, 0.1);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 6px;
+    padding: 10px;
+    align-items: center;
+    border-radius: 12px;
+    transition: 0.3s background;
+}
+.forecast-item:hover{
+    background: rgb(255, 255, 255, 0.15);
+}
+.forecast-item-img{
+    width: 60px;
+    height: 35px;
+    border-radius: 10px;
+}
+
+/*Msg-section*/
+.section-msg{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+    margin-top: 20%;
+}
+.msg-img{
+    height: 180px;
+    width: fit-content;
+}
+
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  border: 5px solid rgba(0, 0, 0, 0.1);
+  border-top: 5px solid #007BFF; /* or your theme color */
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

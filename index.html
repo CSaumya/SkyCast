@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media-queries.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>SkyCast</title>
+</head>
+<body>
+    <main class="main-container">
+        <header class="input-container">
+            <input type="text" class="input-city" placeholder="Search here">
+            <button class="input-btn">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </header>
+        <section class="weather-info" style="display: none;">
+            <div class="locaion-date-container">
+                <div class="location">
+                   <i class="fa-solid fa-location-dot"></i>
+                   <h4 class="country-txt">India</h4>
+                </div>
+                <h5 class="curr-date-txt regular-txt">Tue, 22 July</h5>
+            </div>
+            <div class="weather-summary-container">
+                <div class="weather-summary-info">
+                    <h1 class="temp-txt">29 °C </h1>
+                    <h3 class="condition-txt regular-txt">Cloudy</h3>
+                </div>
+            </div>
+            <div class="weather-conditions-container">
+                <div class="condition-item">
+                    <i class="fa-solid fa-droplet"></i>
+                    <div class="condition-info">
+                        <h5 class="regular-txt">Humidity</h5>
+                        <h5 class="humidity-value-txt">55%</h5>
+                    </div>
+                </div>
+                    <div class="condition-item">
+                    <i class="fa-solid fa-wind"></i>
+                    <div class="condition-info">
+                        <h5 class="regular-txt">Wind Speed</h5>
+                        <h5 class="wind-value-txt">2 M/s</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="forecast-items-container">
+                <div class="forecast-item">
+                    <h5 class="forecast-item-date regular-txt">22 July</h5>
+                    <img src="./assets/weather/rain.png"class="forecast-item-img">
+                    <h5 class="forecast-item-temp">29 °C</h5>
+                </div>
+                <div class="forecast-item">
+                    <h5 class="forecast-item-date regular-txt">22 July</h5>
+                    <img src="./assets/weather/rain.png"class="forecast-item-img">
+                    <h5 class="forecast-item-temp">29 °C</h5>
+                </div>
+                <div class="forecast-item">
+                    <h5 class="forecast-item-date regular-txt">22 July</h5>
+                    <img src="./assets/weather/rain.png"class="forecast-item-img">
+                    <h5 class="forecast-item-temp">29 °C</h5>
+                </div>
+                <div class="forecast-item">
+                    <h5 class="forecast-item-date regular-txt">22 July</h5>
+                    <img src="./assets/weather/rain.png"class="forecast-item-img">
+                    <h5 class="forecast-item-temp">29 °C</h5>
+                </div>
+            </div>
+        </section>
+       <section class="search-city section-msg">
+            <img src="./assets/messages/search.jpg" class="msg-img">
+            <div>
+                <h1>Search City</h1>
+                <h4 class="regular-txt">
+                    Find out the weather conditions of the city
+                </h4>
+            </div>
+        </section>
+          <section class="not-found section-msg" style="display: none;">
+            <img src="./assets/messages/not found.jpeg" class="msg-img">
+            <div>
+                <h1>Search City</h1>
+                <h4 class="regular-txt">
+                    Find out the weather conditions of the city
+                </h4>
+            </div>
+        </section>
+        <div class="loader" style="display: none;">
+            <div class="spinner"></div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+/* For tablets (width ≤ 768px) */
+@media (max-width: 768px) {
+  .main-container {
+    width: 90%;
+    height: auto;
+    padding: 15px;
+  }
+
+  .locaion-date-container {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .weather-conditions-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .forecast-items-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .forecast-item {
+    min-width: 80px;
+    flex: 1 1 30%;
+  }
+
+  .input-city {
+    font-size: 14px;
+  }
+
+  .temp-txt {
+    font-size: 32px;
+  }
+
+  .condition-txt {
+    font-size: 18px;
+  }
+
+  .weather-summary-container {
+    height: 120px;
+  }
+}
+
+/* For small phones (width ≤ 425px) */
+@media (max-width: 425px) {
+  .input-city {
+    padding: 10px 14px;
+    font-size: 14px;
+    padding-right: 40px;
+  }
+
+  .input-btn {
+    right: 12px;
+    font-size: medium;
+  }
+
+  .weather-summary-container {
+    height: 120px;
+  }
+
+  .forecast-item-img {
+    width: 50px;
+    height: 30px;
+  }
+
+  .forecast-item {
+    min-width: 80px;
+    padding: 8px;
+  }
+
+  .condition-item i {
+    font-size: 20px;
+  }
+}
+
+/* For very small devices (width ≤ 320px) */
+@media (max-width: 320px) {
+  .main-container {
+    padding: 12px;
+  }
+
+  .input-city {
+    font-size: 12px;
+    padding: 8px 12px;
+  }
+
+  .forecast-item-img {
+    width: 45px;
+    height: 28px;
+  }
+
+  .country-flag {
+    width: 20px;
+    height: 14px;
+  }
+}
