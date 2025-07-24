@@ -1,1 +1,1 @@
-# SkyCast
+WeatherScope is a responsive weather forecast web application that allows users to search any city around the world and view real-time weather data, including a 5-day forecast, country flag, and dynamic weather backgrounds.
